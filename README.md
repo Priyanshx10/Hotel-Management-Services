@@ -63,9 +63,6 @@ hotel-management-agency/
 │   │   ├── Loader.tsx  # Dynamic loader component
 │   │   ├── BotCard.tsx  # Custom bot feature component
 │   │   ├── ResponsiveCard.tsx  # Responsive service card component
-│   ├── styles/  
-│   │   ├── globals.css  # Global CSS for tailwind
-│   │   └── loader.css  # Loader animation CSS
 │   ├── utils/
 │   │   └── api.js  # Axios or fetch wrapper for API requests
 │   ├── hooks/
