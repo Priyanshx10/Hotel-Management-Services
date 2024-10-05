@@ -1,7 +1,7 @@
+// src/app/layout.tsx
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { Loader } from '../components/Loader';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 
@@ -21,19 +21,18 @@ export const metadata: Metadata = {
   description: 'Custom website development and bots for hotels in Australia and Luxembourg',
 };
 
-
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode;  // Corrected type definition
+}) {
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-         <Header />
-         <main>{children}</main>
+        <Header />
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
